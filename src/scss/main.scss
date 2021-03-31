@@ -1,3 +1,9 @@
+@use './normalize';
+@use './utility/utility';
+
+// page sections
+@use './sections/header';
+
 *,
 *::before,
 *::after {
@@ -16,4 +22,9 @@ a {
 
 ul {
   list-style: none;
+}
+
+section {
+  min-height: 100vh;
+  background-color: #ddd;
 }
