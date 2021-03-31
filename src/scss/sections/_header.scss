@@ -1,14 +1,17 @@
 .header {
-  justify-content: space-between;
-  max-width: 1400px;
-  margin: 0 auto;
   padding: 2rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  font-size: 18px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+  &-content {
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
 
   &-left {
     flex: 1 1 40%;
@@ -30,9 +33,16 @@ nav {
     justify-content: space-evenly;
     margin: 0;
 
-    li:hover {
-      transform: scale(1.1);
-      font-weight: 500;
+    li {
+      transition: all 0.5s ease;
+      & a {
+        color: #fff;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        font-weight: 500;
+      }
     }
   }
 

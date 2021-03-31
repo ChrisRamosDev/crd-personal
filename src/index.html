@@ -14,29 +14,53 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header h-flex">
-      <div class="header-left">
-        <img src="https://dummyimage.com/60x50" alt="logo" />
-      </div>
-      <div class="header-right h-flex">
-        <nav>
-          <ul class="h-flex spacer">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <!-- Menu Icon -->
-        <img
-          class="menu-icon"
-          src="https://dummyimage.com/45x40"
-          alt="TODO: hamburger icon"
-        />
+    <header class="header">
+      <div class="header-content flex">
+        <div class="header-left">
+          <img src="https://dummyimage.com/60x50" alt="logo" />
+        </div>
+        <div class="header-right flex">
+          <nav>
+            <ul class="flex spacer">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+          <!-- Menu Icon -->
+          <img
+            class="menu-icon"
+            src="https://dummyimage.com/45x40"
+            alt="TODO: hamburger icon"
+          />
+        </div>
       </div>
     </header>
     <!-- Section - Hero -->
-    <section id="hero"></section>
+    <section id="hero">
+      <div class="hero-content flex">
+        <div class="hero-content_left flex">
+          <h1 class="hero-headline"><span>Hi,</span> Lorem Ip.</h1>
+          <p class="hero-copy">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
+            numquam.
+          </p>
+        </div>
+        <div class="hero-content_right">
+          <div class="hero-buttons flex">
+            <button class="hero-buttons_btn">See my Work</button>
+            <button class="hero-buttons_btn">More about Me</button>
+          </div>
+        </div>
+      </div>
+      <!-- todo: animated down arrow -->
+      <div class="down-arr">
+        <a href="#projects">
+          <span class="darr">&darr;</span>
+        </a>
+      </div>
+    </section>
     <!-- Section - Projects -->
     <section id="projects"></section>
     <!-- Section - About Me -->
