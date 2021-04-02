@@ -5,6 +5,8 @@
 @use './sections/header';
 @use './sections/hero';
 @use './sections/projects';
+@use './sections/about';
+@use './sections/contact';
 
 *,
 *::before,
@@ -26,8 +28,4 @@ a {
 
 ul {
   list-style: none;
-}
-
-section {
-  min-height: 100vh;
 }

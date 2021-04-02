@@ -23,8 +23,8 @@
           <nav>
             <ul class="flex h-spacer">
               <li><a href="#">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
@@ -59,6 +59,20 @@
         <a href="#projects">
           <span class="darr">&darr;</span>
         </a>
+      </div>
+    </section>
+    <!-- Section - About Me -->
+    <section id="about">
+      <div class="about-content flex">
+        <img src="https://dummyimage.com/500x350" alt="Thumb of orlando" />
+        <div class="about-copy">
+          <h2>About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            reiciendis nisi fugit laudantium et vel, eligendi error distinctio
+            praesentium quam?
+          </p>
+        </div>
       </div>
     </section>
     <!-- Section - Projects -->
@@ -193,10 +207,39 @@
         </div>
       </div>
     </section>
-    <!-- Section - About Me -->
-    <section id="about">About Me</section>
+
     <!-- Section - Contact -->
-    <section id="contact">Contact Form</section>
+    <section id="contact">
+      <div class="contact-heading">
+        <h4>Contact</h4>
+        <h2>Reach out</h2>
+        <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h3>
+      </div>
+      <div class="contact-content">
+        <div class="contact-form">
+          <form class="flex">
+            <label for="name">
+              <input type="text" name="name" placeholder="Name" />
+            </label>
+            <label for="email">
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+            <label for="subject">
+              <input type="text" name="subject" placeholder="Subject" />
+            </label>
+            <label for="message">
+              <textarea
+                name="message"
+                id="contact-message"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </label>
+          </form>
+        </div>
+        <div class="contact-information"></div>
+      </div>
+    </section>
     <!-- Footer -->
     <footer>Hello from the Footer!</footer>
     <script src="./js/index.js"></script>

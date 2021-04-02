@@ -1,0 +1,12 @@
+#contact {
+  width: 100%;
+  padding: 89px 3rem 3rem;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.contact-form {
+  & > form {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
