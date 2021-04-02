@@ -10,6 +10,12 @@
   padding: 3rem 0 2rem;
   margin: 0 auto;
   gap: 2rem;
+  flex-direction: column;
+  text-align: center;
+
+  & img {
+    max-width: 100%;
+  }
 }
 
 .about-copy {

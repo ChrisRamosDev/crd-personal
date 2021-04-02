@@ -1,6 +1,16 @@
 .flex {
   display: flex;
   align-items: center;
+  &.mq-md {
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  &.mq-lg {
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
+  }
 }
 
 .h-spacer > * + * {
