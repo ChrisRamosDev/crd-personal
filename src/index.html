@@ -217,27 +217,36 @@
       </div>
       <div class="contact-content">
         <div class="contact-form">
-          <form class="flex">
-            <label for="name">
-              <input type="text" name="name" placeholder="Name" />
-            </label>
-            <label for="email">
-              <input type="email" name="email" placeholder="Email" />
-            </label>
-            <label for="subject">
-              <input type="text" name="subject" placeholder="Subject" />
-            </label>
-            <label for="message">
-              <textarea
-                name="message"
-                id="contact-message"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </label>
+          <form>
+            <fieldset class="flex">
+              <label for="name">
+                <input type="text" name="name" placeholder="Name" required />
+              </label>
+              <label for="email">
+                <input type="email" name="email" placeholder="Email" />
+              </label>
+              <label for="subject">
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+              </label>
+              <label for="message">
+                <textarea
+                  name="Message"
+                  placeholder="message"
+                  id="contact-message"
+                  cols="30"
+                  rows="10"
+                  required
+                ></textarea>
+              </label>
+              <button>Send Message</button>
+            </fieldset>
           </form>
         </div>
-        <div class="contact-information"></div>
       </div>
     </section>
     <!-- Footer -->
