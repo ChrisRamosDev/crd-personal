@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -9,19 +9,9 @@
 
   &-content {
     justify-content: space-between;
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
-  }
-
-  &-left {
-    flex: 1 1 40%;
     height: 52px;
-  }
-
-  &-right {
-    height: 52px;
-    flex: 1 1 60%;
-    justify-content: flex-end;
   }
 }
 
@@ -32,6 +22,7 @@ nav {
   ul {
     justify-content: space-evenly;
     margin: 0;
+    --space: 1.5rem;
 
     li {
       transition: all 0.5s ease;
