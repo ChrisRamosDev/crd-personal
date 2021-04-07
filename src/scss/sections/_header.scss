@@ -1,12 +1,11 @@
 .header {
-  padding: 1rem 3rem;
+  padding: 0 3rem;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in;
 
   &-content {
     justify-content: space-between;
@@ -14,6 +13,9 @@
     margin: 0 auto;
     height: 52px;
   }
+}
+.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
@@ -25,15 +27,16 @@ nav {
     margin: 0;
     --space: 1.5rem;
 
-    li {
-      transition: all 0.5s ease;
-      & a {
-        color: #fff;
-      }
+    button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      color: #fff;
+      transition: all 0.35s ease;
 
       &:hover {
         transform: scale(1.1);
-        font-weight: 500;
+        font-weight: bold;
       }
     }
   }

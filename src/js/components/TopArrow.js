@@ -4,8 +4,8 @@ template.innerHTML = `
     .up-arr {
       cursor: pointer;
       position: fixed;
-      bottom: 5px;
-      left: 20px;
+      bottom: 0;
+      right: 20px;
       z-index: 100;
       width: 40px;
     }
