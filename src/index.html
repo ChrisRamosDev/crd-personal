@@ -100,40 +100,65 @@
         </div>
       </div>
       <div class="projects-content">
-        <project-component></project-component>
-        <div class="project">
-          <div class="project-content flex mq-md">
-            <div class="project-thumbnail">
-              <img
-                src="https://dummyimage.com/300x200"
-                alt="project thumb placeholder"
-              />
-            </div>
-            <div class="project-info flex">
-              <div class="project-heading">
-                <h3>Title</h3>
-                <h4>caption</h4>
-              </div>
-              <div class="project-description">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                  aut.
-                </p>
-                <details>
-                  <summary>More on this project</summary>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sapiente, atque.
-                  </p>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sapiente, atque.
-                  </p>
-                </details>
-              </div>
-            </div>
-          </div>
-        </div>
+        <project-component>
+          <!-- 
+            details
+           -->
+          <img
+            src="https://dummyimage.com/300x200"
+            alt="project-preview"
+            slot="image"
+          />
+          <h2 slot="title">Project1</h2>
+          <h3 slot="caption">Caption1</h3>
+          <a href="#" class="code-link" slot="github">Github</a>
+          <a href="#" class="demo-link" slot="demo">Demo</a>
+          <p slot="description">
+            Lorem ipsum dolor sit amet consectetadipisicing elit. Quas, aut.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus debitis velit eos deserunt alias deleniti vero eaque
+            at accusamus recusandae!
+          </p>
+        </project-component>
+        <project-component>
+          <!-- 
+            details
+           -->
+          <img
+            src="https://dummyimage.com/300x200"
+            alt="project-preview"
+            slot="image"
+          />
+          <h2 slot="title">Project2</h2>
+          <h3 slot="caption">Caption2</h3>
+          <a href="#" class="code-link" slot="github">Github</a>
+          <a href="#" class="demo-link" slot="demo">Demo</a>
+          <p slot="description">
+            Lorem ipsum dolor sit amet consectetadipisicing elit. Quas, aut.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus debitis velit eos deserunt alias deleniti vero eaque
+            at accusamus recusandae!
+          </p>
+        </project-component>
+        <project-component>
+          <!-- 
+            details
+           -->
+          <img
+            src="https://dummyimage.com/300x200"
+            alt="project-preview"
+            slot="image"
+          />
+          <h2 slot="title">Project3</h2>
+          <a href="#" class="code-link" slot="github">Github</a>
+          <a href="#" class="demo-link" slot="demo">Demo</a>
+          <p slot="description">
+            Lorem ipsum dolor sit amet consectetadipisicing elit. Quas, aut.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Necessitatibus debitis velit eos deserunt alias deleniti vero eaque
+            at accusamus recusandae!
+          </p>
+        </project-component>
       </div>
     </section>
 

@@ -2,7 +2,7 @@ const template = document.createElement("template");
 template.innerHTML = `
   <style>
     #project {
-      margin: 0 auto;
+      margin: 3rem auto;
       max-width: 1100px;
     }
     
@@ -12,7 +12,7 @@ template.innerHTML = `
 
       background-color: darkgray;
       margin: calc(var(--margin) * -1);
-      padding: min(8%, 2rem);
+      padding: min(4%, 2rem);
       display: flex;
       flex-wrap: wrap;
     }
@@ -35,37 +35,26 @@ template.innerHTML = `
     .project-heading {
       text-align: center;
     }
-    .project-description { 
-      padding: 0 2rem;
-    }
-
-    h3, h2 {
-      margin: .5rem 0;
+    .project-description {
+      padding: min(4%, 2rem);
     }
 
   </style>
   <div id="project">
     <div class="project-content">
       <div class="project-preview">
-        <img
-        src="https://dummyimage.com/300x200"
-        alt="project thumb placeholder"
-        />
+        <slot name="image"></slot>
         <div class="project-links">
-          <a href="#" class="code-link">Github</a>
-          <a href="#" class="demo-link">Demo</a>
+          <slot name="github"></slot>
+          <slot name="demo"></slot>
         </div>
       </div>
       <div class="project-info">
         <div class="project-heading">
-          <h2>Title</h2>
-          <h3>caption</h3>
+          <slot name="title"></slot>
         </div>
         <div class="project-description">
-          <p>
-            Lorem ipsum dolor sit amet consectetadipisicing elit. Quas,
-            aut.
-          </p>
+          <slot name="description"></slot>
         </div>
       </div>
     </div>
