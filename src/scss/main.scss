@@ -1,6 +1,7 @@
 @use './normalize';
 @use './utility/utility';
 @use './abstracts/colors';
+@use './abstracts/typography';
 
 // page sections
 @use './sections/header';
@@ -21,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 18px;
-  background-color: #ccc;
+  font-family: var(--font-primary);
 }
 
 a {
@@ -30,4 +31,14 @@ a {
 
 ul {
   list-style: none;
+}
+
+p {
+  font-family: var(--font-secondary);
+  font-weight: var(--font-reg);
+  max-width: var(--measure);
+}
+
+button {
+  font-weight: var(--font-bold);
 }

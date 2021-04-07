@@ -10,22 +10,17 @@ const navLinks = document.querySelectorAll("nav button");
 const triangles = document.getElementById("triangles-btn");
 const heroBtn = document.querySelector(".hero-buttons_btn");
 
-// scroll to top on page refresh
-(function refreshScroll() {
-  window.addEventListener("load", () => {
-    gsap.to(window, {
-      duration: 1,
-      scrollTo: { y: home },
-      ease: "power2",
-    });
-  });
-})();
-
 // change bg on header
 gsap.to(nav, {
   scrollTrigger: {
     trigger: home,
+    end: "50%",
     onToggle: ({ isActive }) => {
+      isActive
+        ? nav.classList.remove("scrolled")
+        : nav.classList.add("scrolled");
+    },
+    onRefresh: ({ isActive }) => {
       isActive
         ? nav.classList.remove("scrolled")
         : nav.classList.add("scrolled");
@@ -48,7 +43,7 @@ navLinks.forEach((link) => {
 heroBtn.addEventListener("click", () => {
   gsap.to(window, {
     duration: 1,
-    scrollTo: { y: "#projects" },
+    scrollTo: { y: "#portfolio" },
     ease: "power2",
   });
 });

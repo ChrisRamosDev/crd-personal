@@ -1,9 +1,9 @@
 #contact {
   width: 100%;
   min-height: 100vh;
-  padding: 89px 2rem 3rem;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  background-color: rebeccapurple;
+  padding: 69px 2rem 3rem;
+  background-color: #fff;
+  line-height: 1.4;
 }
 
 .contact-heading {
@@ -11,8 +11,13 @@
   max-width: 30rem;
   margin: 0 auto;
   padding: 3rem 0 2rem;
+
   & * {
-    margin: 10px 0;
+    margin: 15px 0 5px;
+  }
+
+  h2 {
+    color: var(--clr-primary_dk);
   }
 }
 
@@ -29,7 +34,7 @@
   & input,
   & textarea {
     width: 100%;
-    padding: 0.5rem 0;
+    padding: 0.5rem 1rem;
     border: 0;
     background: transparent;
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
@@ -42,9 +47,8 @@
     max-width: 30rem;
     align-self: center;
     color: #fff;
-    background-color: rgb(33, 0, 124);
-    background-color: transparent;
-    border: 3px solid #fff;
+    background-color: var(--clr-secondary_dk);
+    border: none;
     border-radius: 3px;
     transition: all 0.5s ease;
 
