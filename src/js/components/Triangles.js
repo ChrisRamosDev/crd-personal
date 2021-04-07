@@ -13,17 +13,17 @@ template.innerHTML = `
     transition: all 1s ease;
   }
   #triangle-1 {
-    fill: var(--clr-secondary_lt, #ff00c7);
+    fill: var(--clr-secondary_lt);
   }
   #triangle-2 {
-    fill: var(--clr-secondary_dk, #7326ad);
+    fill: var(--clr-secondary_dk);
   }
   #triangle-3 {
-    fill: var(--clr-primary_dk, #4373d1);
+    fill: var(--clr-primary_dk);
   }
   #triangle-4 {
     transform: translateY(-100%);
-    fill: var(--clr-primary_lt, #75c7f4);
+    fill: var(--clr-primary_lt);
     opacity: 0;
   }
   

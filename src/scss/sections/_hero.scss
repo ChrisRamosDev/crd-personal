@@ -4,8 +4,13 @@
   padding: 120px 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   position: relative;
-  background: url("https://res.cloudinary.com/crdcloud/image/upload/v1617077766/crd-personal/hero-bg_oifzjy.jpg")
-    center;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("https://res.cloudinary.com/crdcloud/image/upload/v1617077766/crd-personal/hero-bg_oifzjy.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -48,6 +53,8 @@
 
     &:hover {
       transform: scale(1.1);
+      border-color: var(--clr-primary_lt);
+      color: var(--clr-primary_lt);
     }
   }
 }
