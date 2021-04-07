@@ -1,6 +1,7 @@
 import "./components/TopArrow";
 import "./components/Triangles";
 import "./components/MenuBtn";
+import "./components/Project";
 
 // GSAP
 import "./gsap/navigation";
