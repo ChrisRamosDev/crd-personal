@@ -7,6 +7,8 @@ gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 const nav = document.querySelector(".header");
 const home = document.getElementById("home");
 const navLinks = document.querySelectorAll("nav button");
+const triangles = document.getElementById("triangles-btn");
+const heroBtn = document.querySelector(".hero-buttons_btn");
 
 // scroll to top on page refresh
 (function refreshScroll() {
@@ -19,19 +21,19 @@ const navLinks = document.querySelectorAll("nav button");
   });
 })();
 
+// change bg on header
 gsap.to(nav, {
   scrollTrigger: {
     trigger: home,
-    markers: true,
     onToggle: ({ isActive }) => {
-      console.log(isActive);
       isActive
         ? nav.classList.remove("scrolled")
         : nav.classList.add("scrolled");
-      console.log(nav.classList);
     },
   },
 });
+
+// smooth scrolling for sections
 navLinks.forEach((link) => {
   const href = link.innerText;
 
@@ -41,5 +43,20 @@ navLinks.forEach((link) => {
       scrollTo: { y: `#${href}` },
       ease: "power2",
     });
+  });
+});
+heroBtn.addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: "#projects" },
+    ease: "power2",
+  });
+});
+
+triangles.addEventListener("click", () => {
+  gsap.to(window, {
+    duration: 1,
+    scrollTo: { y: "#about" },
+    ease: "power3",
   });
 });

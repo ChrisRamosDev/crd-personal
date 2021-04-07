@@ -1,9 +1,12 @@
 .hero {
-  background-color: rgb(33, 0, 124);
   width: 100%;
   height: 100vh;
   padding: 120px 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  position: relative;
+  background: url("https://res.cloudinary.com/crdcloud/image/upload/v1617077766/crd-personal/hero-bg_oifzjy.jpg")
+    center;
+  background-size: cover;
 }
 
 .hero-content {
@@ -54,18 +57,7 @@
   font-size: clamp(2rem, 40px, 3.5rem);
 }
 
-.darr {
-  color: #fff;
-  font-size: 3rem;
-  cursor: pointer;
-  position: absolute;
-  left: 50%;
-  right: 50%;
-  bottom: 5%;
-  transform: translateY(-20px);
-  transition: all 1s ease;
-
-  &:hover {
-    transform: translateY(0%);
-  }
+#triangles-btn {
+  border: none;
+  background-color: transparent;
 }

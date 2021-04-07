@@ -1,4 +1,5 @@
 import "./components/TopArrow";
+import "./components/Triangles";
 
 // GSAP
-import "./gsap/nav";
+import "./gsap/navigation";

@@ -17,7 +17,10 @@
     <header class="header">
       <div class="header-content flex">
         <div class="header-left">
-          <img src="https://dummyimage.com/60x50" alt="logo" />
+          <img
+            src="https://res.cloudinary.com/crdcloud/image/upload/v1617079250/crd-personal/CR_pbkeir.svg"
+            alt="logo"
+          />
         </div>
         <div class="header-right flex">
           <nav>
@@ -41,29 +44,21 @@
     <section id="home" class="hero">
       <div class="hero-content flex mq-md">
         <div class="hero-content_left flex">
-          <h1 class="hero-headline"><span>Hi,</span> Lorem Ip.</h1>
+          <h1 class="hero-headline"><span>Hi,</span> I'm Chris</h1>
           <p class="hero-copy">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-            numquam.
+            A web developer based in Orlando, FL. Always looking for an awesome
+            project to work on.
           </p>
         </div>
         <div class="hero-content_right">
           <div class="hero-buttons flex">
-            <a href="#projects">
-              <button class="hero-buttons_btn">See my Work</button>
-            </a>
-            <a href="#about">
-              <button class="hero-buttons_btn">More about Me</button>
-            </a>
+            <button class="hero-buttons_btn">See my Work</button>
           </div>
         </div>
       </div>
-      <!-- todo: animated down arrow -->
-      <div class="down-arr">
-        <a href="#projects">
-          <span class="darr">&darr;</span>
-        </a>
-      </div>
+      <button id="triangles-btn">
+        <triangles-component></triangles-component>
+      </button>
     </section>
     <!-- Section - About Me -->
     <section id="about">
@@ -259,7 +254,7 @@
         Hello from the Footer. Link stuff Here and throw in a Logo
       </div>
     </footer>
-    <top-arrow></top-arrow>
+    <!-- <top-arrow></top-arrow> -->
     <script src="./js/index.js"></script>
   </body>
 </html>
