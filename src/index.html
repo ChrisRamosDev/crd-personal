@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta -->
+    <meta
+      name="description"
+      content="Orlando web developer, web dev, developer, programmer, landing page, freelance"
+    />
+    <meta
+      name="keyword"
+      content="portfolio, html, css, javascript, developer"
+    />
+    <!-- End Seo -->
     <link rel="stylesheet" href="./scss/main.scss" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -51,7 +61,7 @@
           </div>
         </div>
       </div>
-      <button id="triangles-btn">
+      <button id="triangles-btn" aria-label="scroll to next section">
         <triangles-component></triangles-component>
       </button>
     </section>
@@ -72,7 +82,7 @@
           </p>
         </div>
         <div class="tech">
-          <h4>Some Technology I use</h4>
+          <h3>Some Technology I use</h3>
           <ul class="tech-list flex">
             <li>HTML</li>
             <li>CSS</li>
@@ -170,25 +180,26 @@
       </div>
       <div class="contact-content">
         <div class="contact-form">
-          <form>
+          <form id="contact-form">
             <fieldset class="flex">
+              <input type="hidden" name="contact_number" />
               <label for="name">
-                <input type="text" name="name" placeholder="Name" required />
-              </label>
-              <label for="email">
-                <input type="email" name="email" placeholder="Email" />
-              </label>
-              <label for="subject">
                 <input
                   type="text"
-                  name="subject"
-                  placeholder="Subject"
+                  name="from_name"
+                  placeholder="Name"
                   required
                 />
               </label>
+              <label for="email">
+                <input type="email" name="from_email" placeholder="Email" />
+              </label>
+              <label for="subject">
+                <input type="text" name="subject" placeholder="Subject" />
+              </label>
               <label for="message">
                 <textarea
-                  name="Message"
+                  name="message"
                   placeholder="message"
                   id="contact-message"
                   cols="30"
@@ -196,7 +207,7 @@
                   required
                 ></textarea>
               </label>
-              <button>Send Message</button>
+              <button type="submit" name="button">Send Message</button>
             </fieldset>
           </form>
         </div>
@@ -215,5 +226,6 @@
     </footer>
     <!-- <top-arrow></top-arrow> -->
     <script src="./js/index.js"></script>
+    <script src="./js/emailJS/email.js"></script>
   </body>
 </html>

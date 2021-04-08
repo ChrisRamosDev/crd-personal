@@ -10,7 +10,7 @@ template.innerHTML = `
       --margin: 1rem;
       --multiplier: calc(60rem - 100%);
 
-      background-color: darkgray;
+      background-color: #ebebeb;
       margin: calc(var(--margin) * -1);
       padding: min(4%, 2rem);
       display: flex;
@@ -31,6 +31,7 @@ template.innerHTML = `
     .project-info {
       flex: 1 1 60%;
       padding: 1rem;
+      color: black;
     }
     .project-heading {
       text-align: center;
