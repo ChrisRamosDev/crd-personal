@@ -29,6 +29,7 @@
 nav {
   width: 100%;
   display: none;
+  transform: translateY(-100px);
 
   ul {
     justify-content: space-evenly;
@@ -52,6 +53,16 @@ nav {
 
   @media (min-width: 768px) {
     display: block;
+    transform: translateY(0%);
+  }
+}
+
+nav.mobile {
+  display: block;
+  transform: translateY(100%);
+
+  ul {
+    flex-direction: column;
   }
 }
 

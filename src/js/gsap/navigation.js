@@ -4,26 +4,26 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollToPlugin, ScrollTrigger);
 
 // Smooth scroll to different sections of page
-const nav = document.querySelector(".header");
+const header = document.querySelector(".header");
 const home = document.getElementById("home");
 const navLinks = document.querySelectorAll("nav button");
 const triangles = document.getElementById("triangles-btn");
 const heroBtn = document.querySelector(".hero-buttons_btn");
 
 // change bg on header
-gsap.to(nav, {
+gsap.to(header, {
   scrollTrigger: {
     trigger: home,
     end: "50%",
     onToggle: ({ isActive }) => {
       isActive
-        ? nav.classList.remove("scrolled")
-        : nav.classList.add("scrolled");
+        ? header.classList.remove("scrolled")
+        : header.classList.add("scrolled");
     },
     onRefresh: ({ isActive }) => {
       isActive
-        ? nav.classList.remove("scrolled")
-        : nav.classList.add("scrolled");
+        ? header.classList.remove("scrolled")
+        : header.classList.add("scrolled");
     },
   },
 });
@@ -54,4 +54,12 @@ triangles.addEventListener("click", () => {
     scrollTo: { y: "#about" },
     ease: "power3",
   });
+});
+
+const nav = document.querySelector("nav");
+const menuBtn = document.querySelector("menu-btn");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("mobile");
+  console.log("clicked", window.innerWidth);
 });

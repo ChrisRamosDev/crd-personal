@@ -1,8 +1,10 @@
 {
   "name": "crd-personal",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal portfolio to highlight previous work. Made with HTML, Scss, Vanilla JavaScript, and GSAP for animations. Enjoy!",
   "main": "index.js",
+  "topics": "HTML, Sass, Scss, JavaScript, GSAP, Web Components, EmailJs, Web Developer, Parcel, Responsive",
+  "website": "https://www.chrisramosdev.com",
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html"
